@@ -3,7 +3,7 @@
 body {
 	background-color: white; 
 	font-family: 'Merriweather', serif;
-	width: 380px;
+	width: 420px;
 	max-width: 100%;
 	margin: 0 auto;
 	border: solid 1px black;
@@ -41,6 +41,10 @@ header p {
 	margin: 8px 0;
 }
 
+p {
+	font-size: 1em;
+}
+
 hr{
 	border: solid 2px black;
 	width: 95%;
@@ -51,7 +55,6 @@ hr{
 	margin-top: 20px;
 }
 
-
 p,
 label {
 	color: #74828f;
@@ -60,8 +63,8 @@ label {
 fieldset {
 	border: none;
 	margin: 0 auto;
-	padding: 5px;
-}
+/*	padding: 5px;
+*/}
 
 label {
   display: block;
@@ -92,7 +95,6 @@ select,
 textarea {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0;
 	background-color: rgb(254,246,235);
 }
 
@@ -103,14 +105,16 @@ select {
 	height: 35px;
 }
 
+input[id="zipcode"]{
+	width: 45%;
+}
+
 select[id="state"]{
 	width: 100%;
-   	margin: 0 auto;
+   	margin: 20 0;
    	border: 0;
     outline: 1px solid #CCC;
     padding: 0;
-	/*border: solid 1px initial;
-	overflow: hidden;*/
 }
 
 input[type="checkbox"],

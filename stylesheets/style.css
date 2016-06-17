@@ -92,6 +92,7 @@ select,
 textarea {
 	width: 100%;
 	margin: 0 auto;
+	padding: 0;
 	background-color: rgb(254,246,235);
 }
 
@@ -107,6 +108,7 @@ select[id="state"]{
    	margin: 0 auto;
    	border: 0;
     outline: 1px solid #CCC;
+    padding: 0;
 	/*border: solid 1px initial;
 	overflow: hidden;*/
 }

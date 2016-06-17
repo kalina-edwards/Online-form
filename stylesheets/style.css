@@ -93,7 +93,7 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-	width: 100%;
+	width: 95%;
 	margin: 0 auto;
 	background-color: rgb(254,246,235);
 }

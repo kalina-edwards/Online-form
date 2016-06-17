@@ -110,7 +110,7 @@ input[id="zipcode"]{
 }
 
 select[id="state"]{
-	width: 100%;
+	width: 95%;
    	margin: 20 0;
    	border: 0;
     outline: 1px solid #CCC;

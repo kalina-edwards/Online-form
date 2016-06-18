@@ -1,127 +1,58 @@
-<!DOCTYPE html>
-<html>
-<title>Online Registration Form</title>
-<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-<meta name=viewport content="width=device-width, initial-scale=1">
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kalina Edwards Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+  
 <body>
-<form action="index.html" method="post">
-	<header>
-	<h1>The Code Review</h1>
-	<h2>Signup for our newsletter</h2>
-	<p>Get the latest news on how your code is doing right in your inbox</p> <!--center align these two elements-->
-	</header>
-	<hr>
-	
-	<fieldset>
-		<legend><h2>Contact Information</h2></legend>
-		<label for="name">Full Name</label>
-		<input type="text" id="name" name="user_name" placeholder="Required">
-			
-		<label for="mail">Email Address</label>
-		<input type="email" id="mail" name="user_email" placeholder="Required">
-			
-		<label for="number">Phone Number</label>
-		<input type="tel" id="number" name="user_number">
 
-		<label for="street">Street Address</label>
-		<input type="text" id="street" name="user_street">
+<div class="main-nav">
+   <ul class="nav">
+      <li class="name">Kalina</li>
+      <li><a href="index.html">Home</a></li>
+      <!-- <li><a href="#">Portfolio</a></li> -->
+    	<li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<header>
+    <img src="images/kalinae.jpg" alt="Picture of Kalina Edwards" class="profile-image">      
+	<h1 class="tag name">Hello, I’m Kalina.</h1>
+    <p class="tag location">My home is Arlington, Texas.</p>
+</header>
+<main class="flex">
+<div class="card">
+    <h2>Who Am I...</h2>
+    <p>I’m a Front End Web Developer who loves everything that has to do with creating on the web. I have worked in lots of different jobs including customer service, fast-food and tech support. I am looking forward to working with future clients to help build their online presences for their intended audience.</p>
+    <p>I’ve always been a  life-long learner who's always interested in expanding my skills.</p>
+</div> 
 
-		<label for="city">City</label>
-		<input type="text" id="city" name="user_city">
-
-		<label for="state">State</label>
-		
-		 	<select name="user_state" id="state" placeholder="Choose State">   
-                <option value="Alabama">AL</option>
-                <option value="Alaska">AK</option>
-                <option value="Arizona">AZ</option>
-                <option value="Arkansas">AR</option>
-                <option value="California">CA</option>
-                <option value="Colorado">CO</option>
-                <option value="Connecticut">CT</option>
-                <option value="Delaware">DE</option>
-                <option value="Florida">FL</option>
-                <option value="Georgia">GA</option>
-                <option value="Hawaii">HI</option>
-                <option value="Idaho">ID</option>
-                <option value="Illinois">IL</option>
-                <option value="Indiana">IN</option>
-                <option value="Iowa">IA</option>
-                <option value="Kansas">KS</option>
-                <option value="Kentucky">KY</option>
-                <option value="Louisiana">LA</option>
-                <option value="Maine">ME</option>
-                <option value="Maryland">MD</option>
-                <option value="Massachusetts">MA</option>
-                <option value="Michigan">MI</option>
-                <option value="Minnesota">MN</option>
-                <option value="Mississippi">MS</option>
-                <option value="Missouri">MO</option>
-                <option value="Montana">MT</option>
-                <option value="Nebraska">NE</option>
-                <option value="Nevada">NV</option>
-                <option value="New Hampshire">NH</option>
-                <option value="New Jersey">NJ</option>
-                <option value="New Mexico">NM</option>
-                <option value="New York">NY</option>
-                <option value="North Carolina">NC</option>
-                <option value="North Dakota">ND</option>
-                <option value="Ohio">OH</option>
-                <option value="Oklahoma">OK</option>
-                <option value="Oregon">OR</option>
-                <option value="Pennsylvania">PA</option>
-                <option value="Rhode Island">RI</option>
-                <option value="South Carolina">SC</option>
-                <option value="South Dakota">SD</option>
-                <option value="Tennessee">TN</option>
-                <option value="Texas">TX</option>
-                <option value="Utah">UT</option>
-                <option value="Vermont">VT</option>
-                <option value="Virginina">VA</option>
-                <option value="Washington">WA</option>
-                <option value="West Virginia">WV</option>
-                <option value="Wisconsin">WI</option>
-                <option value="Wyoming">WY</option>
-         </select>
-
-		<label for="zipcode">Zip Code</label>
-		<input type="tel" id="zipcode" name="user_zip">
-	</fieldset>
-
-	<hr class="newhr">
-
-	<fieldset>
-		<legend><h2>Newsletter</h2></legend>
-		<p>Select the newsletters you would like to recieve.</p>
-
-		<input type="checkbox" id="html" value="html_news" name="user_news">
-		<label class="light" for="html">HTML News</label>
-		<br>
-		<input type="checkbox" id="css" value="css_news" name="user_news">
-		<label class="light" for="css">CSS News</label>
-		<br>
-		<input type="checkbox" id="js" value="js_news" name="user_news">
-		<label class="light" for="js">JavaScript News</label>
-		<br>
-
-		<p>Newsletter format</p>
-
-		<input type="radio" id="html_f" value="html_format" name="user_format">
-		<label class="light" for="html_f">HTML</label>
-		<br>
-		<input type="radio" id="plain" value="plain_text" name="user_format">
-		<label class="light" for="plain">Plain text</label>
-		<br>
-
-		<label for="topics">Other topics you'd like to hear about</label>
-		<textarea id="topcs" name="user_topcs"></textarea>
-
-		<button type="submit">Sign Up</button>
-
-		<p class="copyright"><i>Copyright The Code Review</i></p>
-	</fieldset>
-
-</form>
+<div class="card">
+    	<h2>My Objective</h2>
+    	<p>I will master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+    <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Ruby</li>
+          <li>Rails</li>
+    </ul>
+       	<p>My long-term goal is to become the CEO of my own Web Solution Company, that creates a presences online for all business across the globe!</p>
+</div> 
+</main>
+    
+<footer>
+    <ul>
+    	<li><a href="https://twitter.com/Kalina_Edwards_" class="social twitter" target="blank">Twitter</a></li>
+    	<!--<li><a href="#" class="social linkedin">LinkedIn</a></li>-->        
+		<li><a href="https://github.com/kalina-edwards" class="social github" target="blank">Github</a></li>  
+	</ul>
+    	<p class="copyright">Copyright 2016, Kalina</p>
+</footer>
+  
 </body>
+  
 </html>

@@ -103,7 +103,7 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	background-color: rgb(254,246,235);
 }
@@ -111,6 +111,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="numeric"],
 select[id="state"] {
 	height: 35px;
 }
@@ -159,8 +160,10 @@ button {
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"],
-	select[id="state"] {
-
+	input[type="numeric"],
+	select[id="state"],
+	span {
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 	}

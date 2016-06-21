@@ -12,25 +12,37 @@
 	<p>Get the latest news on how your code is doing right in your inbox</p> <!--center align these two elements-->
 	</header>
 	<hr>
+	<hr class="newhr">
 	
 	<fieldset>
 		<legend><h2>Contact Information</h2></legend>
-		<label for="name" class="clearfix">Full Name</label>
-		<input type="text" id="name" name="user_name" placeholder="Required">
-			
-		<label for="mail">Email Address</label>
-		<input type="email" id="mail" name="user_email" placeholder="Required">
-			
-		<label for="number">Phone Number</label>
-		<input type="tel" id="number" name="user_number">
+		<span>
+			<label for="name" class="info">Full Name</label>
+			<input type="text" id="name" name="user_name" placeholder="Required">
+		</span>
 
-		<label for="street">Street Address</label>
-		<input type="text" id="street" name="user_street">
+		<span>	
+			<label for="mail" class="info">Email Address</label>
+			<input type="email" id="mail" name="user_email" placeholder="Required">
+		</span>
 
-		<label for="city">City</label>
-		<input type="text" id="city" name="user_city">
+		<span>	
+			<label for="number" class="info">Phone Number</label>
+			<input type="tel" id="number" name="user_number">
+		</span>
 
-		<label for="state">State</label>
+		<span>
+			<label for="street" class="info">Street Address</label>
+			<input type="text" id="street" name="user_street">
+		</span>
+
+		<span>
+			<label for="city" class="info">City</label>
+			<input type="text" id="city" name="user_city">
+		</span>
+
+		<span>
+			<label for="state" class="info">State</label>
 		
 		 	<select name="user_state" id="state" placeholder="Choose State">   
                 <option value="Alabama">AL</option>
@@ -83,13 +95,18 @@
                 <option value="West Virginia">WV</option>
                 <option value="Wisconsin">WI</option>
                 <option value="Wyoming">WY</option>
-         </select>
+         	</select>
+         </span>
 
-		<label for="zipcode">Zip Code</label>
-		<input type="tel" id="zipcode" name="user_zip">
+        <span>
+			<label for="zipcode" class="info">Zip Code</label>
+			<input type="numeric" id="zipcode" name="user_zip">
+		</span>
+
 	</fieldset>
 
 	<hr class="newhr">
+
 
 	<fieldset>
 		<legend><h2>Newsletter</h2></legend>
@@ -119,7 +136,7 @@
 
 		<button type="submit">Sign Up</button>
 
-		<p class="copyright"><i>Copyright The Code Review</i></p>
+		<p class="copyright"><i>&copy; Copyright The Code Review</i></p>
 	</fieldset>
 
 </form>

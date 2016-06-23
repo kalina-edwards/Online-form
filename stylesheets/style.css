@@ -1,12 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 * {
 	box-sizing: border-box;
 }
 
 body {
-/*	background-color: rgba(0,0,0, .10); 
-*/	background-image: url('http://img0.mxstatic.com/wallpapers/bd2435ecbb595d947f17f3c0d809d17e_large.jpeg');
+	background-image: url('http://img0.mxstatic.com/wallpapers/bd2435ecbb595d947f17f3c0d809d17e_large.jpeg');
 	font-family: 'Merriweather', serif;
 	width: 480px;
 	max-width: 100%;
@@ -24,10 +23,10 @@ h1 {
 	font-size: 1.75em;
 }
 
+legend,
 h2 {
 	margin: 8px 0;
-	color: #c25b56;
-	text-align: 
+	color: #ff1493;  /*#ff369b*/ /*#ff1d8e;*/
 }
 
 header {
@@ -35,9 +34,10 @@ header {
 }
 
 header h1 {
-	background-color: #525564;
+	background-color: #c71585; /*#820e57*/ /*#ff369b;*/   
 	padding: 20px;
-	color: #FEF6EB;
+	color: #ffffff; /*FEF6EB;*/
+	border-radius: 5px;
 }
 
 header h2,
@@ -72,6 +72,11 @@ fieldset {
 	border: none;
 }
 
+legend {
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
 label {
   display: block;
   margin: 15px 0;
@@ -97,18 +102,20 @@ textarea {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="numeric"],
+input[type="number"],
 select,
 textarea {
 	width: 100%;
 	margin: 0 auto;
-	background-color: rgb(254,246,235);
+	background-color: #fff; /*rgb(254,246,235)*/
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="numeric"],
+input[type="number"],
 select[id="state"] {
 	height: 35px;
 }
@@ -119,10 +126,9 @@ input[id="zipcode"]{
 
 select[id="state"]{
 	width: 100%;
-   	margin: 20 0;
-   	border: 0;
-    outline: 1px solid #CCC;
-    padding: 0;
+   	margin: 0 auto;
+   	box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+	padding: 0;
 }
 
 input[type="checkbox"],
@@ -135,10 +141,14 @@ button {
 	width: 100%;
 	height: 50px;
 	padding: 0;
-	background-color: #c25b56;
+	background-color: #c71585; /*#CA48D9;*/
 	border-radius: 5px;
 	border: none;
 	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	letter-spacing: 5px;
 }
 
 .copyright {
@@ -157,7 +167,7 @@ button {
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"],
-	input[type="numeric"],
+	input[type="number"],
 	select[id="state"],
 	label.info{
 	 	width: 45%;

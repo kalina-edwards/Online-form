@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="UTF-8">
 <title>Online Registration Form</title>
 <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
 <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
 <body>
 <form action="index.html" method="post">
 	<header>
@@ -15,7 +18,7 @@
 	<hr class="newhr">
 	
 	<fieldset>
-		<legend><h2>Contact Information</h2></legend>
+		<legend>Contact Information</legend>
 		<span>
 			<label for="name" class="info">Full Name</label>
 			<input type="text" id="name" name="user_name" placeholder="Required">
@@ -44,7 +47,7 @@
 		<span>
 			<label for="state" class="info">State</label>
 		
-		 	<select name="user_state" id="state" placeholder="Choose State">   
+		 	<select name="user_state" id="state">   
                 <option value="Alabama">AL</option>
                 <option value="Alaska">AK</option>
                 <option value="Arizona">AZ</option>
@@ -100,7 +103,7 @@
 
         <span>
 			<label for="zipcode" class="info">Zip Code</label>
-			<input type="numeric" id="zipcode" name="user_zip">
+			<input type="number" id="zipcode" name="user_zip">
 		</span>
 
 	</fieldset>
@@ -109,7 +112,7 @@
 
 
 	<fieldset>
-		<legend><h2>Newsletter</h2></legend>
+		<legend>Newsletter</legend>
 		<p>Select the newsletters you would like to recieve.</p>
 
 		<input type="checkbox" id="html" value="html_news" name="user_news">
@@ -132,7 +135,7 @@
 		<br>
 
 		<label for="topics">Other topics you'd like to hear about</label>
-		<textarea id="topcs" name="user_topcs"></textarea>
+		<textarea id="topics" name="user_topcs"></textarea>
 
 		<button type="submit">Sign Up</button>
 
